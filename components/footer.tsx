@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Chlorite</h3>
+            <h3 className="text-lg font-bold text-black dark:text-white">Chlorite</h3>
             <p className="text-sm text-muted-foreground">
               A minimalist markdown note-taking app that feels as natural as writing on paper.
             </p>
@@ -31,32 +31,32 @@ export function Footer() {
             </div>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Product</h3>
+            <h3 className="text-lg font-bold text-black dark:text-white">Products</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#features" className="text-sm text-muted-foreground hover:text-primary">
-                  Features
+                  [Coming Soon]
                 </a>
               </li>
               <li>
                 <a href="#pricing" className="text-sm text-muted-foreground hover:text-primary">
-                  Pricing
+                  [Coming Maybe]
                 </a>
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary">
-                  Roadmap
+                  [Coming Never]
                 </a>
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary">
-                  Changelog
+                  [Coming Eventually]
                 </a>
               </li>
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Resources</h3>
+            <h3 className="text-lg font-bold text-black dark:text-white">Resources</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary">
@@ -81,7 +81,7 @@ export function Footer() {
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Contact</h3>
+            <h3 className="text-lg font-bold text-black dark:text-white">Contact</h3>
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-muted-foreground" />

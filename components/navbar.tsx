@@ -28,7 +28,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-800 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-gray-800 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 rounded-full pb-1">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <div className="h-8 w-8 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
@@ -59,7 +59,8 @@ export function Navbar() {
           {/* Desktop Download Button */}
           <div className="hidden md:block">
             <Button variant="ghost" className="flex items-center gap-1 text-sm" asChild>
-              <Link href="#download">
+              {/* dw, we'll change this to a file archive later, maybe idk */}
+              <Link href="https://one.one.one.one" target="_blank" rel="noopener noreferrer">
                 <Download className="h-4 w-4 mr-1" /> Download
               </Link>
             </Button>

@@ -6,24 +6,23 @@ import { Terminal } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const InstallCommand: React.FC = () => {
-    const handleCopy = () => {
-        const command = 'brew install --cask chlorite';
-        navigator.clipboard.writeText(command).then(() => {
-            toast.success('Command successfully copied!');
-        });
-    };
+    const command = 'brew install --cask chlorite';
 
     return (
         <div className="relative flex items-center w-full sm:w-auto">
             <div className="bg-secondary/50 backdrop-blur-sm rounded-lg pl-2 pr-10 py-2 flex items-center w-full">
                 <Terminal className="h-4 w-4 mr-2 text-muted-foreground" />
-                <code className="text-sm text-muted-foreground">brew install --cask chlorite</code>
+                <code className="text-sm text-muted-foreground">{command}</code>
             </div>
             <Button
                 variant="ghost"
                 size="icon"
                 className="absolute right-1"
-                onClick={handleCopy}
+                onClick={() => {
+                    navigator.clipboard.writeText('brew install --cask chlorite').then(() => {
+                        toast('Copy successful');
+                    });
+                }}
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
