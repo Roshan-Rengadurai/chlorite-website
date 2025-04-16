@@ -1,4 +1,4 @@
-# Developer REPOSITORY README
+# Developer README
 
 ## Project Setup
 
@@ -14,10 +14,20 @@
     npm install
     ```
 
-3. **Run the Backend Server**:
+3. **Run the Development Server**:
     ```bash
-    cd backend/
-    npm run dev
+    npm start
+    ```
+
+4. **Build for Production**:
+    ```bash
+    npm run build
+    ```
+
+5. **Lint and Format Code**:
+    ```bash
+    npm run lint
+    npm run format
     ```
 
 ## Technologies Used
